@@ -9,7 +9,7 @@ type Service struct {
 	Auth
 }
 
-func NewService(repo repository.Repo) *Service {
+func NewService(repo *repository.Repo) *Service {
 	return &Service{
 		Auth: NewAuth(repo.Auth),
 	}
