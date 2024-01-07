@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"debts/internal /service"
+	"debts/internal/service"
 	"github.com/gin-gonic/gin"
 )
 

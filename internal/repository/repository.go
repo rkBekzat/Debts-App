@@ -1,9 +1,12 @@
 package repository
 
-import "github.com/jmoiron/sqlx"
+import (
+	"debts/internal/model"
+	"github.com/jmoiron/sqlx"
+)
 
 type Auth interface {
-	Create()
+	Create(user model.User) (int, error)
 	GetByEmail()
 	UserByEmailExist()
 }

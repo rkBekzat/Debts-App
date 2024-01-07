@@ -1,8 +1,12 @@
 package service
 
-import "debts/internal /repository"
+import (
+	"debts/internal/model"
+	"debts/internal/repository"
+)
 
 type Auth interface {
+	SignUp(user model.User) (int, error)
 }
 
 type Service struct {

@@ -1,11 +1,13 @@
 package main
 
 import (
-	"debts/internal /handler"
-	"debts/internal /repository"
-	"debts/internal /service"
+	"debts/internal/handler"
+	"debts/internal/repository"
+	"debts/internal/service"
 	"github.com/gin-gonic/gin"
 	"log"
+
+	_ "github.com/lib/pq"
 )
 
 func main() {
